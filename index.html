@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Fahad Munawars Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69e85ce47f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu"> 
+                    <!-- <li><a href="#header">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span> Fahad Munawar</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="about-img-wrap">
+                        <img src="Images/pro.png">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I study Computer Science at the University of Michigan. 
+                        I focus on software development and its connection to aviation 
+                        and aerospace. I build systems-level projects and mobile apps. 
+                        I want to apply these skills to software used in aircraft, 
+                        flight systems, and space technology. My goal is a career in 
+                        aviation or aerospace software.
+                    </p>
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <!-----------------Skills--------------->
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br>Python, C/C++, Swift, Java, JavaScript, HTML5/CSS3, LaTeX</li>
+                            <li><span>Frameworks & Libraries</span><br>SwiftUI, Spring Boot, Angular, NumPy, Pandas, Matplotlib, TensorFlow, OpenCV, Leaflet.js</li>
+                            <li><span>Tools & Technologies</span><br> Git, Google Cloud Platform, PostGIS, VS Code, Xcode, REST APIs, LLDB, GDB</li>
+                        </ul>
+                    </div>
+                    <!-----------------Experience--------------->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>April 2024 - Current</span><br>Barber & Business Owner</li>
+                            <li><span>May 2025 - July 2025</span><br>Study Abroad Research Fellow at Archipelagos Institute of Marine Conservation </li>
+                            <li><span>August 2023 - July 2024</span><br>iOS Developer at Apple Developer Academy</li>
+                        </ul>
+                    </div>
+                    <!-----------------Education--------------->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>January 2024 - Current</span><br>University of Michigan Ann Arbor</li>
+                            <li><span>August 2022 - December 2023</span><br>Wayne State University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>LC-2K Pipelined Simulator</h2>
+                    <p>Built a cycle-accurate LC-2K pipelined CPU simulator using C and systems-level programming concepts. Implemented all pipeline stages with a state/newState model, added full hazard support including multi-stage forwarding, load-use stall detection, and branch flushing. Used LLDB for low-level debugging and applied instruction-level parallelism to validate correctness and performance.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Piazza Post ML Classifier</h2>
+                    <p>Developed a C++ machine-learning classifier that predicts project topics from forum posts using NLP feature extraction. Achieved 95% accuracy through probability modeling, dataset tuning, and iterative evaluation. Implemented the prediction engine with binary search trees and maps to optimize vocabulary organization, improve lookup efficiency, and speed up runtime. Used Git and LLDB throughout development.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>iOS Personalized Concierge App</h2>
+                    <p>Created a personalized concierge application using SwiftUI, Yelp Fusion API, SwiftData, and CoreLocation. Built a full model layer for user preferences, activities, and category analytics, and designed a stacked swipeable card interface with smooth 3D animations. Added a dynamic search bar, custom loading screen, and automatic category-tracking logic that refines recommendations based on user behavior and real-time location.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/tori.png">
+                    <div class="layer">
+                        <h3>Concierge App</h3>
+                        <p>Swift - SwiftUI - SwiftData - Yelp Fusion API - CoreLocation - MVVM - Git</p>
+                        <a href="https://github.com/fahad-munawar/toriFinal"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/pantry.png">
+                    <div class="layer">
+                        <h3>Creative Cooking App</h3>
+                        <p>Swift - SwiftUI - SwiftData - OpenAI API - SDWebImageSwiftUI - Unsplash API</p>
+                        <a href="https://github.com/fahad-munawar/SwiftPantryApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/barber.jpg">
+                    <div class="layer">
+                        <h3>Campus Barber</h3>
+                        <p>Operate a self-taught barbering business with a fully booked weekly schedule. Deliver consistent results across all hair types and maintain a solid base of <br>5 <i class="fa-solid fa-star"></i> reviews.<br></p>
+                        <a href="https://www.instagram.com/munawblendz/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-----------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> fahadmun@umich.edu</p>
+                    <p><i class="fa-solid fa-phone"></i>734-828-4986</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/munawblendz/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/fahadsmunawar"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/fahad-munawar"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="MUNAWAR_FAHAD_RESUME.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Fahad. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+    /*-----------------this controls the clicking of the tab names: skills, experience, education--------------->*/
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+        
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxFxQXsk_CvQ9mbkUlln_lz3Wf9Fveb7oNRdIUcFkXMEk2GFB_hnSzLoSWzL-jNXSGD/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
